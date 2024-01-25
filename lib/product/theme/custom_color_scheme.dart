@@ -35,7 +35,7 @@ final class CustomColorScheme {
     inverseSurface: Color(0xFF313033),
     onInverseSurface: Color(0xFFF4EFF4),
     inversePrimary: Color(0xFFD0BCFF),
-    shadow: Color(0xFF000000),
+    shadow: Color.fromARGB(255, 72, 57, 57),
     surfaceTint: Color(0xFF6750A4),
     outlineVariant: Color(0xFFCAC4D0),
     scrim: Color(0xFF000000),
