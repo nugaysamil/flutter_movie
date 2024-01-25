@@ -5,18 +5,18 @@ packages:
     dependency: transitive
     description:
       name: _fe_analyzer_shared
-      sha256: "0f7b1783ddb1e4600580b8c00d0ddae5b06ae7f0382bd4fcce5db4df97b618e1"
+      sha256: eb376e9acf6938204f90eb3b1f00b578640d3188b4c8a8ec054f9f479af8d051
       url: "https://pub.dev"
     source: hosted
-    version: "66.0.0"
+    version: "64.0.0"
   analyzer:
     dependency: transitive
     description:
       name: analyzer
-      sha256: "5e8bdcda061d91da6b034d64d8e4026f355bcb8c3e7a0ac2da1523205a91a737"
+      sha256: "69f54f967773f6c26c7dcb13e93d7ccee8b17a641689da39e878d5cf13b06893"
       url: "https://pub.dev"
     source: hosted
-    version: "6.4.0"
+    version: "6.2.0"
   archive:
     dependency: transitive
     description:
@@ -273,11 +273,27 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.4.0"
+  easy_logger:
+    dependency: "direct main"
+    description:
+      name: easy_logger
+      sha256: c764a6e024846f33405a2342caf91c62e357c24b02c04dbc712ef232bf30ffb7
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.2"
   envied:
     dependency: "direct main"
     description:
       name: envied
       sha256: dab29e21452c3d57ec10889d96b06b4a006b01375d4df10b33c9704800c208c4
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.5.3"
+  envied_generator:
+    dependency: "direct dev"
+    description:
+      name: envied_generator
+      sha256: b8655d5cb39b4d1d449a79ff6f1367b252c23955ff17ec7c03aacdff938598bd
       url: "https://pub.dev"
     source: hosted
     version: "0.5.3"
@@ -368,6 +384,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.2"
+  google_fonts:
+    dependency: "direct main"
+    description:
+      name: google_fonts
+      sha256: f0b8d115a13ecf827013ec9fc883390ccc0e87a96ed5347a3114cac177ef18e8
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.1.0"
   graphs:
     dependency: transitive
     description:
@@ -473,7 +497,7 @@ packages:
     source: hosted
     version: "2.0.1"
   logger:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: logger
       sha256: "6bbb9d6f7056729537a4309bda2e74e18e5d9f14302489cc1e93f33b3fe32cac"
@@ -680,6 +704,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.3"
+  recase:
+    dependency: transitive
+    description:
+      name: recase
+      sha256: e4eb4ec2dcdee52dcf99cb4ceabaffc631d7424ee55e56f280bc039737f89213
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.1.0"
   retry:
     dependency: transitive
     description:
@@ -805,6 +837,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
+  source_gen:
+    dependency: transitive
+    description:
+      name: source_gen
+      sha256: "14658ba5f669685cd3d63701d01b31ea748310f7ab854e471962670abcf57832"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.5.0"
   source_span:
     dependency: transitive
     description:

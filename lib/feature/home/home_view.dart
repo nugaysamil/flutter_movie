@@ -14,6 +14,18 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> with HomeViewMixin {
   @override
   Widget build(BuildContext context) {
-    return const HomeAppBar();
+    return Scaffold(
+      appBar: const HomeAppBar(),
+      body: Column(
+        children: [
+          Center(
+            child: Text(
+              'Hello World',
+              style: Theme.of(context).textTheme.headlineLarge,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }

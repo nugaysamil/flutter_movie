@@ -4,6 +4,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_movie/product/init/config/app_environment.dart';
 import 'package:kartal/kartal.dart';
 import 'package:logger/logger.dart';
 
@@ -12,13 +13,14 @@ import 'package:logger/logger.dart';
 /// This class is used to initialize the application.
 final class ApplicationInitialize {
   Future<void> make() async {
+    WidgetsFlutterBinding.ensureInitialized();
+
     await runZonedGuarded<Future<void>>(_initialize, (error, stack) {
       Logger().e(error.toString());
     });
   }
 
   Future<void> _initialize() async {
-    WidgetsFlutterBinding.ensureInitialized();
     await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     await DeviceUtility.instance.initPackageInfo();
 
@@ -26,5 +28,7 @@ final class ApplicationInitialize {
       /// custom service or custom logger insert here
       Logger().e(details.exceptionAsString());
     };
+
+    AppEnvironment.general();
   }
 }
