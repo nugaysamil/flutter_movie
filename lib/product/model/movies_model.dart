@@ -3,37 +3,36 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
+import 'package:vexana/vexana.dart';
+
+part 'movies_model.g.dart'; 
 
 @JsonSerializable()
 @immutable
 // This model will be used in the future
-final class Movie with EquatableMixin {
+final class Movie extends INetworkModel<Movie> with EquatableMixin {
   Movie({
-    required this.title,
-    required this.posterPath,
-    required this.backdropPath,
-    required this.overview,
-    required this.releaseDate,
-    required this.voteAverage,
+     this.title,
+     this.posterPath,
+     this.backdropPath,
+     this.overview,
+     this.releaseDate,
+     this.voteAverage,
   });
 
   factory Movie.fromJson(Map<String, dynamic> json) {
-    return Movie(
-      title: json['title'] as String,
-      posterPath: json['poster_path'] as String,
-      backdropPath: json['backdrop_path'] as String,
-      overview: json['overview'] as String,
-      releaseDate: json['release_date'] as String,
-      voteAverage: (json['vote_average'] as num).toDouble(),
-    );
+    return _$MovieFromJson(json);
   }
+  /// User model to map object
+  @override
+  Map<String, dynamic> toJson() => _$MovieToJson(this);
 
-  final String title;
-  final String posterPath;
-  final String backdropPath;
-  final String overview;
-  final String releaseDate;
-  final double voteAverage;
+  final String? title;
+  final String? posterPath;
+  final String? backdropPath;
+  final String? overview;
+  final String? releaseDate;
+  final double? voteAverage;
 
   @override
   List<Object?> get props => [
@@ -61,5 +60,10 @@ final class Movie with EquatableMixin {
       releaseDate: releaseDate ?? this.releaseDate,
       voteAverage: voteAverage ?? this.voteAverage,
     );
+  }
+  
+  @override
+  Movie fromJson(Map<String, dynamic> json) {
+    return _$MovieFromJson(json);
   }
 }
