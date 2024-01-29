@@ -26,6 +26,7 @@ dependencies:
   #Config
   envied: ^0.5.3
   json_annotation: ^4.8.1
+  json_serializable: ^6.7.1
   
   #Utiliy
   easy_logger: ^0.0.2
@@ -36,6 +37,8 @@ dependencies:
 
   widgets: 
     path: module/widgets
+  lottie: ^2.7.0
+  flutter_svg: ^2.0.9
 
 
 dev_dependencies:
@@ -47,12 +50,14 @@ dev_dependencies:
   build_runner: ^2.4.8
   flutter_gen: ^5.4.0
   envied_generator: ^0.5.3
+  flutter_gen_runner: ^5.4.0
 
 
 flutter_gen:
-  output: lib/product/gene
+  output: lib/gen/asset
   integrations:
     lottie: true
+    flutter_svg: true
 
 
 
@@ -64,6 +69,12 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
+    - assets/lottie/
+    - assets/icons/
+    - assets/image/
+    - assets/colors/
+    - assets/colors/
+    
     
 
 

@@ -19,6 +19,8 @@ class _HomeViewState extends State<HomeView> with HomeViewMixin {
     return const Scaffold(
       appBar: HomeAppBar(),
       body: Column(
+        
+      
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           HomeCategoryList(),

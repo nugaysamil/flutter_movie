@@ -2,7 +2,7 @@
 // ignore_for_file: public_member_api_docs
 
 import 'package:flutter/material.dart';
-import 'package:flutter_movie/product/utility/constants/string_constant.dart';
+import 'package:flutter_movie/product/model/category_list_name.dart';
 
 class HomeCategoryList extends StatefulWidget {
   const HomeCategoryList({
@@ -14,21 +14,15 @@ class HomeCategoryList extends StatefulWidget {
 }
 
 class _HomeCategoryListState extends State<HomeCategoryList> {
-  final List<String> categories = [
-    StringConstants.trendingMovies,
-    StringConstants.trendingMovies,
-    StringConstants.trendingMovies,
-    StringConstants.trendingMovies,
-    StringConstants.trendingMovies,
-    StringConstants.trendingMovies,
-  ];
+
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 50,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: categories.length,
+        itemCount: Categories.categories.length,
         itemBuilder: (context, index) {
           return Container(
             margin: EdgeInsets.only(
@@ -45,7 +39,7 @@ class _HomeCategoryListState extends State<HomeCategoryList> {
               onTap: () {},
               child: Center(
                 child: Text(
-                  categories[index],
+                  Categories.categories[index],
                 ),
               ),
             ),
