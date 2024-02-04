@@ -46,6 +46,7 @@ final class CustomNetworkImage extends StatelessWidget {
       fit: boxFit,
       width: size?.width,
       height: size?.height,
+
       errorListener: (value) {
         if (kDebugMode) debugPrint('Error: $value');
       },

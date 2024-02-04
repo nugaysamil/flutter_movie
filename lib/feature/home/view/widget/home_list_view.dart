@@ -1,12 +1,12 @@
 // ignore_for_file: public_member_api_docs
 
 import 'package:flutter/material.dart';
+import 'package:flutter_movie/feature/home/view/view_model/home_view_model.dart';
 import 'package:flutter_movie/product/package/custom_image/custom_network_image.dart';
 import 'package:flutter_movie/product/utility/constants/string_constant.dart';
 import 'package:flutter_movie/product/widget/padding/project_padding.dart';
 
-class HomeListView extends StatelessWidget {
-  const HomeListView({super.key});
+class HomeListView extends HomeViewModel {
 
   @override
   Widget build(BuildContext context) {

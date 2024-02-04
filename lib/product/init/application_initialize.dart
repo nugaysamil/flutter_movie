@@ -4,7 +4,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_movie/product/init/config/app_environment.dart';
 import 'package:kartal/kartal.dart';
 import 'package:logger/logger.dart';
 
@@ -29,6 +28,5 @@ final class ApplicationInitialize {
       Logger().e(details.exceptionAsString());
     };
 
-    AppEnvironment.general();
   }
 }

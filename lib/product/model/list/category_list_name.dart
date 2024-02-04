@@ -5,7 +5,7 @@ import 'package:flutter_movie/product/utility/constants/string_constant.dart';
 class Categories {
   static const List<String> categories = [
     StringConstants.trendingMovies,
-    StringConstants.trendingMovies,
-    StringConstants.trendingMovies,
+    StringConstants.topRatedMovies,
+    StringConstants.upComingMovies,
   ];
 }
