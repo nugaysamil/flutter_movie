@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_movie/feature/home/custom_list_view.dart';
-import 'package:flutter_movie/feature/home/home_result.dart';
+import 'package:flutter_movie/feature/home/home_movies_widget.dart';
 import 'package:flutter_movie/feature/home/view/view_model/home_view_model.dart';
 import 'package:flutter_movie/feature/home/view/widget/home_app_bar.dart';
 import 'package:flutter_movie/feature/home/view/widget/home_category_list.dart';

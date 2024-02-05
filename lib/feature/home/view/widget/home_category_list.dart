@@ -1,4 +1,4 @@
-// ignore_for_file:  sort_constructors_first, inference_failure_on_function_return_type, unused_field
+// ignore_for_file:  sort_constructors_first, inference_failure_on_function_return_type, unused_field, eol_at_end_of_file
 // ignore_for_file: unused_element, unused_local_variable, inference_failure_on_instance_creation, prefer_const_constructors, unnecessary_breaks, public_member_api_docs
 
 import 'package:flutter/material.dart';

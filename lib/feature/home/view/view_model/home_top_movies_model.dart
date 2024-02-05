@@ -4,13 +4,16 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_movie/feature/home/home_result.dart';
+import 'package:flutter_movie/feature/home/home_movies_widget.dart';
 import 'package:flutter_movie/product/enum/service_path_enum.dart';
 import 'package:flutter_movie/product/model/result_model.dart';
 import 'package:flutter_movie/product/service/manager/product_network_manager.dart';
 
 abstract class HomeTopMoviesViewModel extends State<MovieTopRatedMovies> {
   final Dio dio = ProjectNetworkManager.instance!.dio;
+
+    static int _selectedCategoryIndex = 1;
+
 
   List<Result> models = [];
 
