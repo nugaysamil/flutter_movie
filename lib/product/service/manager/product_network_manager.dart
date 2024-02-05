@@ -20,5 +20,7 @@ class ProjectNetworkManager {
 
   final String _baseUrl = 'https://api.themoviedb.org/3/';
 
+  // https://api.themoviedb.org/3/movie/top_rated?api_key=a16c68727cb7d3d0e78b3f5ad76e4f34
+
   late final Dio dio;
 }
