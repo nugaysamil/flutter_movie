@@ -10,6 +10,15 @@ class StringConstants {
   static const topRatedMovies = 'Top Rated Movies';
   static const upComingMovies = 'Upcoming Movies';
 
+  static const overview = 'Overview';
+
+  static const releaseDate = 'Release Date: ';
+
+  static const rating = 'Rating: ';
+
+
+
+
 
   static const apiKey = 'a16c68727cb7d3d0e78b3f5ad76e4f34';
 

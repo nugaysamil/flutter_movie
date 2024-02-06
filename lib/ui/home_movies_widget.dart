@@ -1,9 +1,9 @@
 // ignore_for_file: public_member_api_docs
 
 import 'package:flutter/material.dart';
-import 'package:flutter_movie/feature/home/home_view.dart';
-import 'package:flutter_movie/feature/home/view/widget/home_top_rated_movies.dart';
-import 'package:flutter_movie/feature/home/view/widget/home_upcoming_movies.dart';
+import 'package:flutter_movie/ui/common/screen/movies/popular/popular_movies_screen.dart';
+import 'package:flutter_movie/ui/common/screen/movies/top_rated/top_rated_movies_screen.dart';
+import 'package:flutter_movie/ui/common/screen/movies/upcoming/upcoming_movies_screens.dart';
 
 class MovieResults extends StatefulWidget {
   const MovieResults({super.key});

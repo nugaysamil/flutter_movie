@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs
 
 import 'package:equatable/equatable.dart';
-import 'package:flutter_movie/core/model/base_model.dart';
+import 'package:flutter_movie/core/base/base_model.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'result_model.g.dart';
