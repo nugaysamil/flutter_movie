@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs
 
 import 'package:flutter/material.dart';
-import 'package:flutter_movie/ui/common/screen/movie_details/movie_details_content.dart';
+import 'package:flutter_movie/feature/common/screen/movie_details/movie_details_content.dart';
 import 'package:flutter_movie/product/widget/button/details_back_button.dart';
 import 'package:flutter_movie/product/model/result_model.dart';
 import 'package:google_fonts/google_fonts.dart';

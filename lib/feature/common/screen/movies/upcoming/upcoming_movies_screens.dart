@@ -1,24 +1,22 @@
-// ignore_for_file: unused_local_variable, public_member_api_docs, inference_failure_on_instance_creation
+// ignore_for_file: inference_failure_on_instance_creation
 
 import 'package:flutter/material.dart';
-import 'package:flutter_movie/ui/custom_list_view.dart';
-import 'package:flutter_movie/ui/common/screen/movie_details/home_details_screen.dart';
 import 'package:flutter_movie/core/base/base_movie_model.dart';
-import 'package:flutter_movie/ui/common/screen/home/widgets/home_app_bar.dart';
-import 'package:flutter_movie/ui/common/screen/home/widgets/home_category_list.dart';
 import 'package:flutter_movie/product/enum/service_path_enum.dart';
 import 'package:flutter_movie/product/router/navigation_router.dart';
 import 'package:flutter_movie/product/utility/constants/string_constant.dart';
+import 'package:flutter_movie/feature/common/screen/home/widgets/home_app_bar.dart';
+import 'package:flutter_movie/feature/common/screen/home/widgets/home_category_list.dart';
+import 'package:flutter_movie/feature/common/screen/movie_details/home_details_screen.dart';
+import 'package:flutter_movie/feature/custom_list_view.dart';
 
-class HomeView extends BaseMovieModel {
-  int _selectedCategoryIndex = 0;
-
+class HomeUpComingMovies extends BaseMovieModel {
+  final int _selectedCategoryIndex = 2;
   @override
   void initState() {
-    fetchMovies(ServicePath.POPULAR_MOVIES);
     super.initState();
+    fetchMovies(ServicePath.UP_COMING_MOVIES);
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,9 +30,6 @@ class HomeView extends BaseMovieModel {
           HomeCategoryList(
             selectedCategoryIndex: _selectedCategoryIndex,
             onCategorySelected: (index) {
-              setState(() {
-                _selectedCategoryIndex = index;
-              });
               NavigationRouter.navigateToCategoryPage(context, index);
             },
           ),
