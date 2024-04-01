@@ -41,3 +41,15 @@ The project follows a simple MVC (Model-View-Controller) architecture:
 
 
 
+# Conclusion
+
+Flutter Movie is a simple yet functional application that demonstrates the use of various Flutter packages and APIs. It provides a solid foundation for building more complex movie browsing applications.
+
+
+
+
+
+
+
+
+
